@@ -1,0 +1,35 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title = 'Dhanvin Pharmaceuticals | Healthcare Supply', description = 'A pharmaceutical and healthcare supply partner serving institutional requirements in Andhra Pradesh.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-IN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<meta name="theme-color" content="#102b3a" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_IN" />
+		<meta property="og:site_name" content="Dhanvin Pharmaceuticals" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+		<title>{title}</title>
+	</head>
+	<body><slot /></body>
+</html>

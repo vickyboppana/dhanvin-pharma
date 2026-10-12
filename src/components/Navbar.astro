@@ -1,0 +1,32 @@
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+	<div class="container site-header__inner">
+		<a class="brand" href="/#home" aria-label="Dhanvin Pharmaceuticals home">
+			<span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span>
+			<span class="brand__name">Dhanvin <strong>Pharmaceuticals</strong></span>
+		</a>
+		<button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span></button>
+		<nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+			<a href="/#about">About</a><a href="/#solutions">Expertise</a><a href="/#institutional">Current supply</a><a href="/#vision">Our vision</a>
+			<a class="nav-cta" href="/#contact">Enquire <span aria-hidden="true">&rarr;</span></a>
+		</nav>
+	</div>
+</header>
+
+<script>
+	const menuToggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+	const primaryNavigation = document.querySelector<HTMLElement>('#primary-navigation');
+	const closeMenu = () => {
+		menuToggle?.setAttribute('aria-expanded', 'false');
+		menuToggle?.setAttribute('aria-label', 'Open navigation menu');
+		primaryNavigation?.classList.remove('is-open');
+	};
+	menuToggle?.addEventListener('click', () => {
+		const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+		menuToggle.setAttribute('aria-expanded', String(!isOpen));
+		menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+		primaryNavigation?.classList.toggle('is-open', !isOpen);
+	});
+	primaryNavigation?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+	document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeMenu(); });
+</script>

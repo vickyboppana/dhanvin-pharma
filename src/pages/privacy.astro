@@ -1,0 +1,18 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+---
+<SiteLayout title="Privacy Information | Dhanvin Pharmaceuticals" description="How the Dhanvin Pharmaceuticals static website handles contact enquiries and website data.">
+	<Navbar />
+	<main class="legal-page container" id="main-content">
+		<p class="eyebrow">Website information</p>
+		<h1>Privacy Information</h1>
+		<p>This static website does not create accounts or store enquiry form entries on a server. When you submit the form, your browser opens your chosen email application with the details you entered. No message is sent until you choose to send it.</p>
+		<h2>Contact and third-party services</h2>
+		<p>If you email Dhanvin Pharmaceuticals, your message is handled by your email provider and the company as recipients. The site loads font files from Google Fonts, so your browser requests those files from Google when the pages load. No analytics or advertising service is configured on this website.</p>
+		<p>This page describes the website's current technical behavior and is not legal advice. Have the company's privacy requirements reviewed before production use.</p>
+		<a class="text-link" href="/#contact">Contact Dhanvin Pharmaceuticals <span aria-hidden="true">&rarr;</span></a>
+	</main>
+	<SiteFooter />
+</SiteLayout>
