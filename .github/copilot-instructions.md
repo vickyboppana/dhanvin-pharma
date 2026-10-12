@@ -4,7 +4,7 @@
 - Build a static corporate website with Astro, semantic HTML, CSS, and minimal JavaScript.
 - Keep the company name exactly as `Dhanvin Pharmaceuticals`.
 - Do not add ecommerce, accounts, backend services, databases, prices, inventory, or unsupported business claims.
-- Current supply supports government hospitals and colleges; do not imply that the company serves every institution.
+- Current supply: quality medicines and surgical products to the Government of Andhra Pradesh. Do not add unprovided institutions, tenders, contract details, or certifications.
 - Describe international import/export as a future ambition, not current activity.
 - Keep the enquiry form frontend-only; it prepares an email and does not store or transmit data.
 

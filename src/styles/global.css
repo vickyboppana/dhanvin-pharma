@@ -7,7 +7,7 @@
 	--ink: #173241;
 	--deep: #102b3a;
 	--deepest: #0b202d;
-	--muted: #60737d;
+	--muted: #53666e;
 	--line: #dce6e2;
 	--paper: #f7faf8;
 	--white: #fff;
@@ -76,7 +76,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .hero__promise { max-width: 510px; margin: 18px 0 0; color: var(--ink); font-family: var(--font-display); font-size: 21px; font-weight: 700; line-height: 1.4; }
 .hero__summary { max-width: 520px; margin: 24px 0 0; color: #536a73; font-size: 16px; line-height: 1.75; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-.hero__note { display: flex; align-items: center; gap: 13px; margin-top: 47px; color: #6e8088; font-size: 11px; line-height: 1.55; }
+.hero__note { display: flex; align-items: center; gap: 13px; margin-top: 47px; color: #53666e; font-size: 11px; line-height: 1.55; }
 .hero__note-mark { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid #c4d5cd; border-radius: 50%; color: var(--teal-dark); font-family: var(--font-display); font-size: 10px; font-weight: 800; }
 .hero-art { position: relative; min-height: 488px; overflow: hidden; color: #e3efea; background: #102b3a; }
 .hero-art::before { position: absolute; inset: 0; content: ''; opacity: .24; background-image: linear-gradient(30deg, transparent 49.7%, #b4d1c1 50%, transparent 50.3%), linear-gradient(150deg, transparent 49.7%, #b4d1c1 50%, transparent 50.3%); background-size: 62px 108px; mask-image: radial-gradient(ellipse at 55% 48%, #000, transparent 74%); }
@@ -120,7 +120,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .hero-art__tile span:first-child { color: var(--lime); font-family: var(--font-display); font-size: 20px; font-weight: 700; }
 .hero-art__tile span:nth-child(2) { color: #d7e5dc; font-size: 9px; line-height: 1.45; }
 .hero-art__tile span:last-child { margin-left: auto; color: var(--mint); font-size: 18px; }
-.hero__scroll { position: absolute; right: max(32px, calc((100vw - 1200px) / 2)); bottom: 20px; display: flex; align-items: center; gap: 9px; color: #72867f; font-size: 10px; }
+.hero__scroll { position: absolute; right: max(32px, calc((100vw - 1200px) / 2)); bottom: 20px; display: flex; align-items: center; gap: 9px; color: #52665e; font-size: 10px; }
 .hero__scroll span { width: 20px; height: 1px; background: #79a396; }
 
 .intro-strip { border-block: 1px solid var(--line); background: rgba(255, 255, 255, .68); }
@@ -134,10 +134,10 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .about-grid { display: grid; grid-template-columns: .74fr 1.26fr; gap: 105px; align-items: start; }
 .about-aside { padding: 6px 0 0 28px; border-left: 1px solid #b5ccc0; }
 .about-aside .eyebrow { margin-bottom: 36px; }
-.about-aside__year { margin: 0; color: #d5e4dc; font-family: var(--font-display); font-size: 72px; font-weight: 700; line-height: 1; }
+.about-aside__year { margin: 0; color: #718f82; font-family: var(--font-display); font-size: 72px; font-weight: 700; line-height: 1; }
 .about-aside__caption { margin: 8px 0 0; color: var(--teal-dark); font-size: 12px; font-weight: 700; }
 .about-aside__rule { width: 100%; max-width: 170px; height: 1px; margin: 31px 0 18px; background: var(--line); }
-.about-aside__note { max-width: 180px; margin: 0; color: #6d8086; font-size: 12px; line-height: 1.7; }
+.about-aside__note { max-width: 180px; margin: 0; color: #53666e; font-size: 12px; line-height: 1.7; }
 .about-copy .section-heading h2 { max-width: 600px; }
 .about-copy .text-link { margin-top: 29px; }
 
@@ -150,10 +150,10 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .solution-card:nth-child(4) { grid-column: 2 / span 2; }
 .solution-card:hover { border-color: #8ab7a5; background: var(--white); transform: translateY(-3px); }
 .solution-card__top { display: flex; align-items: flex-start; justify-content: space-between; }
-.solution-card__index { color: #8ea19d; font-size: 10px; font-weight: 700; }
+.solution-card__index { color: #53676c; font-size: 10px; font-weight: 700; }
 .solution-card__body { margin: 23px 0 19px; }
 .solution-card h3 { max-width: 235px; margin: 0; color: var(--ink); font-family: var(--font-display); font-size: 18px; font-weight: 700; line-height: 1.35; }
-.solution-card p { max-width: 270px; margin: 10px 0 0; color: #687b80; font-size: 12px; line-height: 1.65; }
+.solution-card p { max-width: 270px; margin: 10px 0 0; color: #53676c; font-size: 12px; line-height: 1.65; }
 .solution-card .text-link { margin-top: auto; align-self: flex-start; font-size: 11px; }
 
 .institutional { position: relative; overflow: hidden; padding: 70px 0; color: var(--white); background: var(--deep); }
@@ -207,7 +207,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .contact-copy .section-heading__text { max-width: 480px; }
 .contact-actions { display: grid; margin-top: 34px; border-top: 1px solid var(--line); }
 .contact-action { display: flex; min-height: 66px; flex-direction: column; justify-content: center; gap: 4px; border-bottom: 1px solid var(--line); }
-.contact-action__label { color: #77878a; font-size: 10px; font-weight: 600; }
+.contact-action__label { color: #51646a; font-size: 10px; font-weight: 600; }
 .contact-action__value { color: var(--ink); font-size: 13px; font-weight: 700; }
 .contact-action:hover .contact-action__value { color: var(--teal-dark); }
 .contact-action--whatsapp .contact-action__value { display: flex; justify-content: space-between; }
@@ -218,7 +218,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .enquiry-panel__top { display: flex; align-items: center; justify-content: space-between; }
 .enquiry-panel__top .eyebrow { margin: 0; }
 .enquiry-panel__number { margin: 0; color: var(--teal-dark); font-family: var(--font-display); font-size: 11px; font-weight: 800; }
-.enquiry-panel__number span { color: #9aaba8; font-weight: 500; }
+.enquiry-panel__number span { color: #53666e; font-weight: 500; }
 .enquiry-panel h3 { margin: 22px 0 0; color: var(--ink); font-family: var(--font-display); font-size: 24px; font-weight: 700; }
 .enquiry-panel__intro { margin: 8px 0 24px; color: var(--muted); font-size: 12px; line-height: 1.65; }
 .form-row { display: grid; gap: 7px; margin-top: 15px; }
