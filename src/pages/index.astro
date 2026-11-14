@@ -14,11 +14,11 @@ const solutions = [
 	{ index: '05', category: 'Diagnostic Kits & Equipment', description: 'Diagnostic kits and equipment supporting healthcare testing and diagnostic requirements.' },
 ];
 
-const principles = [
-	{ index: '01', title: 'Quality-focused supply', text: 'Careful attention to product quality across healthcare supply requirements.' },
-	{ index: '02', title: 'Broad product expertise', text: 'Five supply areas spanning pharmaceutical, surgical, dental, laboratory and diagnostic needs.' },
-	{ index: '03', title: 'Institutional capability', text: 'Product expertise aligned with institutional healthcare requirements.' },
-	{ index: '04', title: 'Professional service', text: 'Responsive communication and a long-term approach to supply relationships.' },
+const activities = [
+	{ index: '01', title: 'Supply of medicines to government hospitals', text: 'We supply medicines in response to institutional requirements, subject to applicable tender terms, product approvals and regulatory requirements.' },
+	{ index: '02', title: 'Medical college supplies', text: 'We support the procurement needs of medical colleges and associated healthcare facilities for medicines and relevant healthcare products.' },
+	{ index: '03', title: 'Government tender participation', text: 'We review tender requirements, prepare relevant documentation, coordinate product sourcing and work within applicable eligibility criteria and procurement conditions.' },
+	{ index: '04', title: 'Institutional healthcare procurement', text: 'We aim to serve eligible institutional customers by understanding product specifications, quantities, delivery schedules and documentation needs.' },
 ];
 ---
 
@@ -47,9 +47,10 @@ const principles = [
 					<p class="about-aside__note">Healthcare supply, approached with care.</p>
 				</div>
 				<div class="about-copy">
-					<SectionHeading eyebrow="About Dhanvin" title="Supply that supports better care." />
-					<p class="body-copy">Established in 2024, Dhanvin Pharmaceuticals is an India-based pharmaceutical and healthcare supply company serving institutional requirements across a focused range of medical supply areas.</p>
-					<p class="body-copy">Its work is guided by a quality-focused approach, responsive coordination and professional service.</p>
+					<SectionHeading eyebrow="Who we are" title="A dependable partner in healthcare supply." />
+					<p class="body-copy">Established in 2024, Dhanvin Pharmaceuticals is an India-based pharmaceutical and healthcare supply company focused on meeting institutional procurement requirements.</p>
+					<p class="body-copy">We supply medicines to government hospitals and medical colleges, and participate in government tender opportunities for medicines and healthcare-related products. Our work includes understanding specifications, documentation needs and supply conditions to support an organized, transparent procurement process.</p>
+					<p class="body-copy">We value timely access to medicines and essential healthcare supplies. Through responsible sourcing, professional coordination and responsive service, we aim to build lasting relationships with public healthcare institutions.</p>
 					<a class="text-link" href="#contact">Start a conversation <span aria-hidden="true">&rarr;</span></a>
 				</div>
 			</div>
@@ -77,7 +78,7 @@ const principles = [
 				<div class="institutional__copy">
 					<p class="eyebrow eyebrow--light">Current business</p>
 					<h2>Current Government Supply</h2>
-					<p>Dhanvin Pharmaceuticals currently supplies quality medicines and surgical products to the Government of Andhra Pradesh.</p>
+					<p>Dhanvin Pharmaceuticals currently supplies quality medicines and surgical products to the Government of Andhra Pradesh. We understand the important role government hospitals and medical colleges play in serving communities, and aim to support public healthcare through responsible sourcing, attention to requirements and professional service.</p>
 					<div class="institutional__tags" aria-label="Our approach">
 						<span>Quality medicines</span><span>Surgical products</span>
 					</div>
@@ -86,19 +87,45 @@ const principles = [
 			</div>
 		</section>
 
-		<section class="section section--principles" id="why-dhanvin">
+		<section class="section section--activities" id="activities">
 			<div class="container">
-				<div class="principles-heading">
-					<SectionHeading eyebrow="Why Dhanvin" title="A partner for the work behind care." text="Professional supply relationships are built on the details: listening, communication and follow-through." />
+				<div class="activities-heading">
+					<SectionHeading eyebrow="What we do" title="Our core business activities" text="We work to understand institutional needs and support procurement through dependable coordination and professional service." />
 				</div>
-				<div class="principles-grid">
-					{principles.map((principle) => (
-						<article class="principle">
-							<span class="principle__index">{principle.index}</span>
-							<h3>{principle.title}</h3>
-							<p>{principle.text}</p>
+				<div class="activities-grid">
+					{activities.map((activity) => (
+						<article class="activity">
+							<span class="activity__index">{activity.index}</span>
+							<h3>{activity.title}</h3>
+							<p>{activity.text}</p>
 						</article>
 					))}
+				</div>
+			</div>
+		</section>
+
+		<section class="section section--purpose" id="purpose">
+			<div class="container">
+				<div class="purpose-heading">
+					<SectionHeading eyebrow="Our purpose" title="Guided by service, integrity and partnership." />
+				</div>
+				<div class="purpose-pillars">
+					<article class="purpose-pillar">
+						<p class="eyebrow">Our mission</p>
+						<p>To support public healthcare institutions through dependable medicine supply and professional procurement services. We strive to contribute to efficient institutional purchasing through responsible sourcing, clear communication and a commitment to agreed supply requirements.</p>
+					</article>
+					<article class="purpose-pillar">
+						<p class="eyebrow">Our vision</p>
+						<p>To establish Dhanvin Pharmaceuticals as a trusted partner for government hospitals, medical colleges and healthcare institutions through reliability, professional integrity and consistent service.</p>
+					</article>
+				</div>
+				<h3 class="values-heading">Our values</h3>
+				<div class="values-grid">
+					<article class="value"><h4>Reliability</h4><p>Dependable coordination and fulfilling agreed supply commitments.</p></article>
+					<article class="value"><h4>Quality and compliance</h4><p>Sourcing products that meet applicable specifications and regulatory requirements.</p></article>
+					<article class="value"><h4>Transparency</h4><p>Clear communication and responsible business practices.</p></article>
+					<article class="value"><h4>Customer commitment</h4><p>Understanding institutional requirements and providing suitable supply solutions.</p></article>
+					<article class="value"><h4>Long-term partnerships</h4><p>Building trust, accountability and lasting relationships through service.</p></article>
 				</div>
 			</div>
 		</section>
@@ -109,8 +136,10 @@ const principles = [
 				<div class="vision__content">
 					<p class="eyebrow eyebrow--light">Future direction</p>
 					<h2>From regional supply to global healthcare partnerships.</h2>
-					<p class="vision__current"><strong>Today:</strong> Focused on pharmaceutical and healthcare supply.</p>
-					<p class="vision__future"><strong>Looking ahead:</strong> Dhanvin Pharmaceuticals aims to build international healthcare partnerships and explore future import and export opportunities.</p>
+					<p class="vision__current"><strong>Today — Strengthening our foundation:</strong> We focus on pharmaceutical supply and institutional procurement, supported by responsible sourcing, professional coordination and dependable service.</p>
+					<p class="vision__future"><strong>Tomorrow — Expanding across the world:</strong> Our long-term ambition is to explore international markets through pharmaceutical and healthcare product imports and exports. We aspire to build partnerships with manufacturers, suppliers, distributors and healthcare institutions across countries.</p>
+					<p class="vision__global"><strong>Our global vision:</strong> To become a trusted international partner in pharmaceutical and healthcare supply, guided by quality-conscious sourcing, regulatory compliance, ethical business practices and dependable partnerships.</p>
+					<p class="vision__global">We welcome opportunities to connect with international manufacturers, pharmaceutical exporters and importers, distributors and institutional buyers who share a vision for long-term business growth.</p>
 					<a class="button button--mint" href="#contact">Build what comes next <span aria-hidden="true">&rarr;</span></a>
 				</div>
 				<div class="vision-map" aria-hidden="true">
@@ -134,7 +163,7 @@ const principles = [
 					</div>
 					<div class="offices">
 						<div class="office"><h3>Head Office</h3><address>6-135, Vattigudipadu Village,<br />Agiripalli Mandal, Eluru District,<br />Andhra Pradesh 521211, India</address></div>
-						<div class="office"><h3>Branch Office</h3><address>Turlapati Kutumbarao Street,<br />Labbipet, Vijayawada 520008,<br />Andhra Pradesh, India</address></div>
+						<div class="office"><h3>Corporate Office</h3><address>Turlapati Kutumbarao Street,<br />Labbipet, Vijayawada 520008,<br />Andhra Pradesh, India</address></div>
 					</div>
 				</div>
 				<div class="enquiry-panel">
